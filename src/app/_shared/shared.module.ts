@@ -14,6 +14,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 const MATERIAL_MODULES = [
   MatButtonModule,
   MatCheckboxModule,
@@ -32,7 +34,7 @@ const MATERIAL_MODULES = [
 ];
 
 @NgModule({
-  imports: [...MATERIAL_MODULES],
-  exports: [...MATERIAL_MODULES],
+  imports: [...MATERIAL_MODULES, FlexLayoutModule],
+  exports: [...MATERIAL_MODULES, FlexLayoutModule],
 })
 export class SharedModule {}

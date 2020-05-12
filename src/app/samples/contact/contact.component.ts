@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormGroupDirective, NgForm, FormControl, Validators } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
-import { Contact } from './contact';
+import { Contact } from '../../_shared';
 
 /** Error when invalid control is dirty, touched, or submitted. */
 export class NgLpErrorStateMatcher implements ErrorStateMatcher {

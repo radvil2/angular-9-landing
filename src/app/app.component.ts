@@ -7,7 +7,7 @@ import {
 } from '@angular/material/dialog';
 import { MediaMatcher } from '@angular/cdk/layout';
 import { SE } from './directives/scroll.directive';
-import { ContactDialogComponent } from './contact-dialog/contact-dialog.component';
+import { ContactDialogComponent } from './_shared';
 
 @Component({
   selector: 'app-root',
