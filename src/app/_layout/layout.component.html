@@ -24,10 +24,10 @@
     fxShow="false"
     fxShow.gt-xs="true"
   >
-    <a mat-list-item routerLink="about">About</a>
-    <a mat-list-item routerLink="portfolio">Portfolio</a>
-    <a mat-list-item routerLink="blog">Blog</a>
-    <a mat-list-item routerLink="contact">Contact</a>
+    <a mat-list-item routerLink="samples/about">About</a>
+    <a mat-list-item routerLink="samples/portfolio">Portfolio</a>
+    <a mat-list-item routerLink="samples/blog">Blog</a>
+    <a mat-list-item routerLink="samples/contact">Contact</a>
   </mat-nav-list>
   <span class="navigation-spacer"></span>
   <button
@@ -64,20 +64,14 @@
         href="#"
         ><img src="assets/img/logo.png"
       /></a>
-      <a mat-list-item routerLink="about">About</a>
-      <a mat-list-item routerLink="portfolio">Portfolio</a>
-      <a mat-list-item routerLink="blog">Blog</a>
-      <a mat-list-item routerLink="contact">Contact</a>
+      <a mat-list-item routerLink="samples/about">About</a>
+      <a mat-list-item routerLink="samples/portfolio">Portfolio</a>
+      <a mat-list-item routerLink="samples/blog">Blog</a>
+      <a mat-list-item routerLink="samples/contact">Contact</a>
     </mat-nav-list>
   </mat-sidenav>
 
   <mat-sidenav-content nglp-scroll (onScroll)="detectScroll($event)">
-    <!-- <app-heading></app-heading> -->
     <router-outlet></router-outlet>
-    <!-- <app-about></app-about>
-    <app-portfolio></app-portfolio>
-    <app-pricing></app-pricing>
-    <app-blog></app-blog>
-    <app-contact></app-contact> -->
   </mat-sidenav-content>
 </mat-sidenav-container>

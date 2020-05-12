@@ -4,30 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'blog',
+    redirectTo: 'samples',
     pathMatch: 'full',
   },
   {
-    path: 'blog',
+    path: 'samples',
     loadChildren: () =>
-      import('./samples/blog/blog.module').then((m) => m.BlogModule),
-  },
-  {
-    path: 'about',
-    loadChildren: () =>
-      import('./samples/about/about.module').then((m) => m.AboutModule),
-  },
-  {
-    path: 'contact',
-    loadChildren: () =>
-      import('./samples/contact/contact.module').then((m) => m.ContactModule),
-  },
-  {
-    path: 'portfolio',
-    loadChildren: () =>
-      import('./samples/portfolio/portfolio.module').then(
-        (m) => m.PortfolioModule
-      ),
+      import('./samples/samples.module').then((m) => m.SamplesModule),
   },
 ];
 
